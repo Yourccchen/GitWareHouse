@@ -1,13 +1,40 @@
-git checkout -- file 丢弃工作区的修改
-git status 查看当前状态
-git add file 添加该文件到暂存区
-git commit -m "xxx" 把文件提交到仓库
-git log 查看提交日志
-git log --pretty=oneline 看到时间线版本的提交日志
-HEAD 当前版本 
-HEAD^上一个版本 
-HEAD~100 上一百个版本
-git reset --hard HEAD^ 回退到上一个版本
-git reset --hard 1094a 回退到1094a时间线的版本
-git reflog 记录每一次命令
+git checkout -- file    丢弃工作区的修改
+git status    查看当前状态
+git add file    添加该文件到暂存区
+git commit -m "xxx"    把文件提交到仓库
+git log    查看提交日志
+git log --pretty=oneline    看到时间线版本的提交日志
+HEAD    当前版本 
+HEAD^   上一个版本 
+HEAD~100    上一百个版本
+git reset --hard HEAD^    回退到上一个版本
+git reset --hard 1094a    回退到1094a时间线的版本
+git reflog    记录每一次命令
+git rm file    删除一个文件
+git remote add origin git@github.com:Yourccchen/learngit.git    将本地仓库与github上的仓库远程连接
+git remote -v    仓库路径查询查询
+git remote rm origin    删除指定的远程仓库
+git clone   克隆远程仓库
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>或者git switch <name>
+
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+储藏当前工作现场：git stash
+查看stash内容：git stash list
+恢复工作现场，但stash内容不删除：git stash apply
+恢复工作现场，stash内容删除：git stash pop
+恢复指定的stash条目：git stash apply stash@{0}
+复制一个特定的提交到当前分支：git cherry-pick  xxx
+
+
+
 
