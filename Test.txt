@@ -1,2 +1,4 @@
 This is a Test txt
 To verify my use of Git
+
+Change to v1.2
